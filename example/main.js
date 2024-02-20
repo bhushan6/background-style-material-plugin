@@ -86,7 +86,7 @@ function createScene(engine, canvas) {
     {
       size: { width: 1.9, height: 1.9 },
       texture: "/16-9-dummy-image4.jpg",
-      fillStyle: FILL_STYLE.OBJECT_FIT,
+      fillStyle: FILL_STYLE.CONTAIN,
     },
     scene,
   );
@@ -98,7 +98,7 @@ function createScene(engine, canvas) {
     {
       size: { width: 1.9, height: 1.9 / 1.77 },
       texture: "/16-9-dummy-image4.jpg",
-      fillStyle: FILL_STYLE.ObJECT_FIT,
+      fillStyle: FILL_STYLE.CONTAIN,
     },
     scene,
   );
@@ -110,7 +110,7 @@ function createScene(engine, canvas) {
     {
       size: { width: 1.9 * 1.77, height: 0.4 },
       texture: "/16-9-dummy-image4.jpg",
-      fillStyle: FILL_STYLE.OBJECT_FIT,
+      fillStyle: FILL_STYLE.CONTAIN,
     },
     scene,
   );

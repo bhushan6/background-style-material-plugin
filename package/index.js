@@ -2,7 +2,7 @@ import { MaterialPluginBase } from "@babylonjs/core";
 
 export const FILL_STYLE = {
   COVER: 0,
-  OBJECT_FIT: 1,
+  CONTAIN: 1,
 };
 
 export class BackgroundStyleMaterialPlugin extends MaterialPluginBase {

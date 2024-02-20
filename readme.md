@@ -41,7 +41,7 @@ texture.onLoadObservable.add(() => {
     // Setup plugin properties
     backgroundStylePlugin.imageAspectRatio = texture.getSize().width / texture.getSize().height;
     backgroundStylePlugin.containerAspectRatio = 2 / 1; // Example aspect ratio of the plane
-    backgroundStylePlugin.fillStyle = FILL_STYLE.COVER; // or FILL_STYLE.OBJECT_FIT
+    backgroundStylePlugin.fillStyle = FILL_STYLE.COVER; // or FILL_STYLE.CONTAIN
     backgroundStylePlugin.isEnabled = true; // Enable the plugin
 })
 
@@ -55,12 +55,18 @@ plane.material = material;
 engine.runRenderLoop(() => scene.render());
 ```
 
-## Options
+## Properties
+- **`imageAspectRatio`**: Aspect ratio of texture
+- **`containerAspectRatio`**: Aspect ratio of Plane or any mesh you using it for
+- **`fillStyle`**: Background style (`FILL_STYLE.COVER` or `FILL_STYLE.CONTAIN`)
+- **`isEnabled`**: set it `true` to make the plugin work
+
+## Style Options
 
 The plugin provides the following options to customize the background style:
 
 - **`FILL_STYLE.COVER`**: Scale the background image to be as large as possible so that the container's background area is completely covered by the background image. Some parts of the background image may not be in view within the container.
-- **`FILL_STYLE.OBJECT_FIT`**: Scale the image to maintain its aspect ratio while fitting within the container's content box.
+- **`FILL_STYLE.CONTAIN`**: Scale the image to maintain its aspect ratio while fitting within the container's content box.
 
 ## Contributing
 
