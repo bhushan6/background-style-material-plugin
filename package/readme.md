@@ -65,7 +65,3 @@ The plugin provides the following options to customize the background style:
 ## Contributing
 
 Contributions to the BackgroundStyle Material Plugin are welcome. Please feel free to submit pull requests or open issues to discuss proposed changes or enhancements.
-
-## License
-
-Specify your license here or indicate that it is available as open-source under a specific license agreement.
