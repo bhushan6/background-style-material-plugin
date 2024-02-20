@@ -1,14 +1,32 @@
 {
-  "name": "backgroundStyleMaterialPlugin",
+  "name": "backgroundstyle-material-plugin",
   "version": "0.0.0",
   "type": "module",
   "author": "Bhushan Wagh (https://github.com/bhushan6)",
+  "bugs": {
+    "url": "https://github.com/bhushan6/background-style-material-plugin/issues"
+  },
+  "homepage": "https://github.com/bhushan6/background-style-material-plugin#readme",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "publish:patch": "npm version patch && npm run build && npm publish",
+    "publish:minor": "npm version minor && npm run build && npm publish",
+    "publish:major": "npm version major && npm run build && npm publish",
     "preview": "vite preview"
   },
+  "license": "MIT",
   "devDependencies": {
-    "vite": "^5.1.0"
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^6.15.0"
+  },
+  "files": ["dist"],
+  "module": "./dist/backgroundStyleMaterialPlugin.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/backgroundStyleMaterialPlugin.es.js"
+    }
   }
 }
